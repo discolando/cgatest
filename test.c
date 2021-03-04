@@ -21,7 +21,7 @@ void waitForEnter()
 
 void main()
 {
-	int x;
+    int x;
     setGraphicsMode();
 
     for (x = 0; x < 16384; x++) {

@@ -20,20 +20,20 @@ ARG buffer: dword
   ret
 _copyBuffer2Video endp
 
-public _getGraphicsMode
-_set_graphics_mode proc
+public _setGraphicsMode
+_setGraphicsMode   proc
    mov ah, 0
    mov al, 04h
    int 10h
    ret
-_set_graphics_mode endp
+_setGraphicsMode endp
 
 public _setTextMode
-_set_text_mode proc
+__setTextMode proc
    mov ah, 0
    mov al, 03h
    int 10h
    ret
-_set_text_mode endp
+__setTextMode endp
 
 END
